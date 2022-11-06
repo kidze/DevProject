@@ -22,7 +22,7 @@ public class AccountManagerTest {
         System.assert(thisAccount != null);
         System.assertEquals('Test Account', thisAccount.Name);
         
-        System.assertEquals('Test Contact 1', thisAccount.Contacts[0].LastName);
+        System.assertEquals('Test Contact 1', contacts[0].LastName);
         System.assertEquals('Test Contact 2', contacts[1].LastName);
         
     }

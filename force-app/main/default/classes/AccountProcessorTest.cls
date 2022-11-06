@@ -18,7 +18,6 @@ private class AccountProcessorTest {
         }
         insert contacts;
         
-        
         Test.startTest();
         AccountProcessor.countContacts(idlist);
         Test.stopTest();
