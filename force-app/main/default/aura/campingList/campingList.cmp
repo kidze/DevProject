@@ -5,9 +5,8 @@
   		<li>Goat Food</li>
 	</ol>
 
-	
-
 	<aura:handler name="addItem" event="c:addItemEvent" action="{!c.handleAddItem}"/>
+
 	<aura:attribute name="items" type="Camping_Item__c[]"/>
 	
 	

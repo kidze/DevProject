@@ -32,10 +32,10 @@
 	},
 
 	handleAddItem : function(component,event,helper){
-		var item = event.getParam("item");
+		var itemFromEvent = event.getParam("item");
 		var action = component.get("c.saveItem");
 		action.setParams({
-			"item":item
+			"item":itemFromEvent
 		});
 		action.setCallBack(this,function(response){
 			var state = response.getState();
