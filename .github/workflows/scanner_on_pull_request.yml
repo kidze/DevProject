@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: checkout repo
         uses:  actions/checkout@v3
-      - name: in ra chao cau
+      - name: in ra chao cau ne
         run: echo "Chào cậu. Cậu tuyệt lắm!"
       - name: Install SFDX CLI và Salesforce Code Analyzer scanner
         run: |
