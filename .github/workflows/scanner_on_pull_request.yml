@@ -8,7 +8,7 @@ jobs:
   chay-scanner:
     runs-on: ubuntu-latest
     steps:
-      - name: Đi tới git repo này
+      - name: checkout repo
         uses:  actions/checkout@v3
       - name: in ra chao cau
         run: echo "Chào cậu. Cậu tuyệt lắm!"
