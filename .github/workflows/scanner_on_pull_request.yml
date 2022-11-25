@@ -1,7 +1,7 @@
-name: Gimasys GitHub Acions Workflow Demo
-run-name: Test thử Salesforce Code Analysis scanner khi push code len main
+name: Gimasys SFDX Scanner (on Pull Request) Demo
+run-name: Demo run
 on:
-  push:
+  pull_request:
     branches:
       - main-branch
 jobs:
