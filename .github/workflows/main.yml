@@ -1,1 +1,12 @@
-name: GitHub Acions Demo Gimasys
+name: Gimasys GitHub Acions Workflow Demo
+run-name: Test thử Salesforce Code Analysis scanner khi push code len main
+on:
+  push:
+    branches:
+      - main
+jobs:
+  chay-scanner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: chao cau
+        run: echo "Chào cậu. Cậu tuyệt lắm!"
