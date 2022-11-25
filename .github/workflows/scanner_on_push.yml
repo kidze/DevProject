@@ -1,0 +1,22 @@
+name: Gimasys SFDX Scanner (on Push) Demo
+run-name: Demo run
+on:
+  push:
+    branches:
+      - main-branch
+jobs:
+  chay-scanner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Đi tới git repo này
+        uses:  actions/checkout@v3
+      - name: in ra chao cau
+        run: echo "Chào cậu. Cậu tuyệt lắm!"
+      - name: Install SFDX CLI và Salesforce Code Analyzer scanner
+        run: |
+          npm install sfdx-cli --global
+          npm install @salesforce/cli --global
+          sfdx plugins:install @salesforce/sfdx-scanner
+      - name: SFDX Scanner run
+        run: |
+          sfdx scanner:run --target .
