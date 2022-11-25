@@ -19,4 +19,6 @@ jobs:
           sfdx plugins:install @salesforce/sfdx-scanner
       - name: SFDX Scanner run
         run: |
-          sfdx scanner:run --target force-app/main/default --severity-threshold 2
+          sfdx scanner:run --target force-app/main/default/classes --severity-threshold 1
+      - name: Print xong roi
+        run: echo 'xong roi do nha ahihi!'
