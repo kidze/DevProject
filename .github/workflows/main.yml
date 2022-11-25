@@ -3,7 +3,7 @@ run-name: Test thử Salesforce Code Analysis scanner khi push code len main
 on:
   push:
     branches:
-      - main
+      - main-branch
 jobs:
   chay-scanner:
     runs-on: ubuntu-latest
