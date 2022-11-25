@@ -8,7 +8,7 @@ jobs:
   chay-scanner-on-push:
     runs-on: ubuntu-latest
     steps:
-      - name: Đi tới git repo này
+      - name: Checkout repo
         uses:  actions/checkout@v3
       - name: in ra chao cau
         run: echo "Chào cậu. Cậu tuyệt lắm!"
@@ -19,6 +19,6 @@ jobs:
           sfdx plugins:install @salesforce/sfdx-scanner
       - name: SFDX Scanner run
         run: |
-          sfdx scanner:run --target force-app/main/default/classes --severity-threshold 1
+          sfdx scanner:run --target force-app/main/default/classes
       - name: Print xong roi
         run: echo 'xong roi do nha ahihi!'
