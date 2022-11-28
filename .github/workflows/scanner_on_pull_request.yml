@@ -19,7 +19,7 @@ jobs:
           sfdx plugins:install @salesforce/sfdx-scanner
       - name: SFDX Scan Pull Request
         uses: mitchspano/sfdx-scan-pull-request@v0.1.4
-        with:
-          severity-threshold: 3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        #with:
+        #  severity-threshold: 3
+        #env:
+        #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
